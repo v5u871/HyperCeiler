@@ -55,7 +55,7 @@ jobs:
         run: |
           echo "Running on default: ${{ steps.branch-name.outputs.current_branch }}"
         
-      - name: Download APK from build
+      - name: Download APK
         uses: actions/download-artifact@v1
         with:
           name: apk
